@@ -4,59 +4,168 @@
 <head>
     <meta charset="UTF-8">
     <title>Jennifer Cuéllar - Desarrolladora Web</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #f7f7f7;
-            padding: 30px;
-        }
-        .card {
-            background: white;
-            padding: 30px;
-            max-width: 700px;
-            margin: auto;
-            border-radius: 8px;
-            box-shadow: 0 0 10px #ccc;
-        }
-        h1 {
-            margin-top: 0;
-        }
-        h2 {
-            margin-bottom: 5px;
-        }
-        ul li {
-            margin-bottom: 4px;
-        }
-    </style>
-</head>
-<body>
-    <div class="card">
-        <h1>Jennifer Cuéllar</h1>
-        <p>Desarrolladora Web Junior | Puebla, México</p>
 
 ```
-    <h2>Sobre mí</h2>
+<!-- Tipografía moderna de Google -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+    body {
+        margin: 0;
+        font-family: 'Poppins', sans-serif;
+        background: #fdf2f8; /* rosa pastel suave */
+        color: #333;
+    }
+
+    /* --- NAVBAR --- */
+    nav {
+        background: #f9a8d4; /* rosa más intenso */
+        padding: 15px 30px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    nav h2 {
+        margin: 0;
+        color: white;
+        font-weight: 600;
+    }
+
+    nav ul {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+        margin: 0;
+    }
+
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+        font-weight: 500;
+    }
+
+    /* --- CONTENEDOR CENTRAL --- */
+    .card {
+        background: white;
+        padding: 30px;
+        max-width: 900px;
+        margin: 40px auto;
+        border-radius: 12px;
+        box-shadow: 0 0 12px rgba(0,0,0,0.1);
+    }
+
+    h1 {
+        margin-top: 0;
+        color: #d946ef;
+    }
+
+    h2 {
+        margin-bottom: 8px;
+        color: #ec4899;
+    }
+
+    ul li {
+        margin-bottom: 6px;
+    }
+
+    /* Botones sociales */
+    .buttons {
+        margin-top: 15px;
+    }
+
+    .btn {
+        display: inline-block;
+        padding: 10px 18px;
+        background: #f472b6;
+        color: white;
+        text-decoration: none;
+        border-radius: 6px;
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+    .btn:hover {
+        background: #ec4899;
+    }
+
+    /* Footer */
+    footer {
+        text-align: center;
+        padding: 25px;
+        color: #777;
+    }
+</style>
+```
+
+</head>
+
+<body>
+
+```
+<!-- ===================================== -->
+<!-- BARRA DE NAVEGACIÓN                     -->
+<!-- ===================================== -->
+<nav>
+    <h2>Jennifer Cuéllar</h2>
+    <ul>
+        <li><a href="#">Inicio</a></li>
+        <li><a href="#proyectos">Proyectos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+    </ul>
+</nav>
+
+<!-- ===================================== -->
+<!-- SECCIÓN PRINCIPAL                      -->
+<!-- ===================================== -->
+<div class="card">
+    <h1>Desarrolladora Web Junior</h1>
     <p>
-        Desarrolladora Web en formación con conocimientos en HTML, CSS, JavaScript, PHP, MySQL y C#. 
-        Actualmente construyendo proyectos reales para perfeccionar mis habilidades y trabajar en empresa 
-        o como freelance.
+        Soy Jennifer, desarrolladora web en formación con experiencia en
+        HTML, CSS, JavaScript, PHP y C#.  
+        Actualmente construyendo proyectos reales para trabajar en empresa o como freelance.
     </p>
 
     <h2>Habilidades Técnicas</h2>
     <ul>
         <li>HTML5, CSS3, JavaScript</li>
-        <li>PHP, MySQL</li>
-        <li>C#</li>
+        <li>PHP y MySQL</li>
+        <li>C# y ASP.NET</li>
         <li>Git y GitHub</li>
     </ul>
 
+    <!-- Botones sociales -->
+    <div class="buttons">
+        <a class="btn" href="mailto:jpfloyd97@gmail.com">Email</a>
+        <a class="btn" href="https://wa.me/5212212547429" target="_blank">WhatsApp</a>
+        <a class="btn" href="https://www.linkedin.com/in/jennifer-cuellar-0b6118273" target="_blank">LinkedIn</a>
+    </div>
+</div>
+
+<!-- ===================================== -->
+<!-- SECCIÓN PROYECTOS                      -->
+<!-- ===================================== -->
+<div class="card" id="proyectos">
+    <h2>Proyectos</h2>
+    <p>Aquí irán tus proyectos conforme los vayamos construyendo.</p>
+</div>
+
+<!-- ===================================== -->
+<!-- SECCIÓN CONTACTO                       -->
+<!-- ===================================== -->
+<div class="card" id="contacto">
     <h2>Contacto</h2>
     <ul>
         <li>Email: jpfloyd97@gmail.com</li>
         <li>Tel: 2212547429</li>
-        <li>LinkedIn: /jennifer-cuellar-0b6118273/</li>
+        <li>LinkedIn: jennifercuellar</li>
     </ul>
 </div>
+
+<!-- FOOTER -->
+<footer>
+    © 2025 - Desarrollado por Jennifer Cuéllar
+</footer>
 ```
 
 </body>
